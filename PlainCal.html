@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			const calculate = (form, event) => {
+				event.preventDefault();
+				document.getElementById("output").innerText = eval(form.expression.value);	
+			}
+		</script>
+	</head>
+	<body>
+		<form onsubmit="calculate(this, event)">
+			<label>Введіть вираз:
+			<input id="exp" name="expression" placeholder="2+5">
+			<button>Calculate</button>
+		</form>
+		<div id="output">
+	</body>
+</html>
